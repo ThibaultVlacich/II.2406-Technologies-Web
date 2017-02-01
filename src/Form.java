@@ -17,6 +17,12 @@ public class Form extends HttpServlet {
 	  String birthDate = request.getParameter("birthdate");
 	  String sex = request.getParameter("sex");
 	  
+	  // Set cookies
+	  response.addCookie(new Cookie("firstName", firstName));
+	  response.addCookie(new Cookie("LastName", lastName));
+	  response.addCookie(new Cookie("birthDate", birthDate));
+	  response.addCookie(new Cookie("Sex", sex));
+	  
 	  // Set content type
 	  response.setContentType("text/html");
 	  
