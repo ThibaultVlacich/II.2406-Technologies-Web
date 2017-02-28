@@ -100,7 +100,7 @@ public class ShowSession extends HttpServlet {
 	    s.setAttribute("name", name);
 	    s.setAttribute("birthdate", birthDate);
 	    
-	    w.println("<a href=\"\">< Retour</a>");
+	    doGet(request, response);
 	 }
 	 
    private static int absoluteDay(int month, int day){
